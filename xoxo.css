@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Caja2: hsl(179, 62%, 50%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    max-width: 400px;
+    box-shadow: 2px 3px 10px rgba(0,0,0,.1);
+    margin: 1rem;
+
+}
+/* --------CAVECERA----------*/
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem 1rem;
+    
+}
+.cabecera h2{
+    color: var(--Cyan)
+}.cabecera h3{
+    color: var(--Bright-Yellow);
+}
+.cabecera p{
+    color: var(--Grayish-Blue);
+    line-height: 2rem;
+}
+/******************************/
+.contenido h3{
+    margin: 1rem 1rem;
+}
+
+.contenido p{
+    margin: 0 1rem;
+}
+.caja1{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Cyan);
+    color: var(--Light-Gray);
+}
+.caja1 p:nth-child(3){
+    margin-top: 0.5rem;
+}
+.caja1 button{
+width: 90%;
+margin: 1.5rem 1rem;
+border-radius: 5px;
+border: none;
+padding: 1rem;
+background-color: var(--Bright-Yellow);
+color: var(--Light-Gray);
+font-family: 'Karla', sans-serif;;
+font-size: 1.1rem;
+box-shadow: 2px 3px 10px rgba(0,0,0,.25);
+font-weight: bold;
+}
+.caja2{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 2rem;
+    background-color: var(--Caja2);
+    color: var(--Light-Gray);
+    overflow: hidden;
+}
+.caja2 p{
+    padding-bottom: 2rem;
+    max-width: 70%;
+} 
+.caja1 p:nth-child(1){
+    font-size: 2rem;
+    font-weight: bold;
+}
+.unir{
+    display: flex;
+    align-items: center;
+}
+.unir .per-mount p{
+    font-size: 1rem;
+    opacity: 50%;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+/* ********MEDIAQUERIES********* */
+
+
+@media (min-width:1200px) {
+    .card{
+        max-height: 85vh;
+    }
+    .contenedor{
+        max-width: 50vw;
+    }
+    .contenido{
+        display: flex;
+        flex-direction: row;
+    }
+    .cabecera{
+        padding: 1rem 2rem;
+    }
+    
+    
+    .caja1{
+        width: 50%;
+        padding: 1.5rem 2rem;
+        
+    }
+    .caja1 button{
+        width: 85%;
+        margin-top: 3rem;
+        font-weight: bold;
+    }
+    .caja1 p:nth-child(3){
+        margin-top: 2rem;
+    }
+    .caja2{
+        width: 50%;
+        gap: 1px;
+        padding: 1rem 2rem;
+    }
+    .caja2 p{
+        padding-bottom: 2rem;
+        max-width: 90%;
+    } 
+    
+
+}
